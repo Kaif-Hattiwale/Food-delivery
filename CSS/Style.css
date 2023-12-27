@@ -1,0 +1,293 @@
+/* Css reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Css varibles */
+:root {
+    --navbar-height: 59px;
+}
+
+/* Navigation Bar */
+#navbar {
+
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+
+}
+/* Navigation bar:Logo and Image */
+#logo {
+    margin: 0px 40px;
+}
+
+#logo img {
+    margin: 10px 5px;
+    height: 65px;
+    border-radius: 50px;
+}
+
+
+
+/* Navigation bar:List Styling */
+
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+
+}
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    font-family: Agbalumo;
+    color: white;
+    display: block;
+    padding: 3px 20px;
+    padding-bottom: 3px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* Home Section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 4px 200px;
+    height: 604px;
+    align-items: center;
+    justify-content: center;
+}
+
+#home::before {
+    content: "";
+    background: url(../mainbg.jpg) no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 109%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+/* services Section */
+#services {
+    z-index: -1;
+    position: absolute;
+    display: flex;
+    margin: 10px;
+}
+
+.services-container {
+
+
+    width: 100%;
+    height: 650px;
+
+}
+
+.services-container::before {
+    content: "";
+    position: absolute;
+    background: url(../servicesbg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 650px;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#services .box {
+    border: 2px solid brown;
+    margin: 3px 5px;
+    padding: 27px;
+    border-radius: 48px;
+    background: #f7f2f2;
+}
+
+#services .box img {
+    height: 164px;
+    width: 200px;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+}
+
+.box p {
+    font-family: Agbalumo;
+}
+
+/* client Section */
+#client-section {
+    z-index: -1;
+    position: relative;
+    /* height: 660px; */
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url(../clients2.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.80;
+
+}
+
+#clients {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* #clients img{
+    height: 165px;
+} */
+.client-item {
+    padding: 50px;
+}
+
+.client-item img {
+    width: 10rem;
+}
+
+/* Contact Us section */
+#contact {
+    position: relative;
+}
+
+#contact::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: url('../contact.jpg') no-repeat center center/cover;
+    opacity: 0.7;
+}
+
+#contact-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+footer {
+    background: black;
+    color: white;
+    padding: 9px 20px;
+
+}
+
+#contact-box input,
+#contact-box textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    font-family: Agbalumo;
+}
+
+#contact-box form {
+    width: 40%;
+}
+
+#contact-box label {
+    font-family: Agbalumo;
+    font-size: 1.3rem;
+}
+
+#client-section h1 {
+    color: white;
+}
+
+#clients-logo img {
+    border-radius: 22px;
+
+}
+
+/* Utility Classes */
+#home h1 {
+    font-family: Agbalumo;
+    color: rgb(24, 23, 23);
+    text-align: center;
+    font-size: 3.8rem;
+    padding: 12px;
+}
+
+#home p {
+    font-family: Agbalumo;
+    color: rgb(22, 20, 20);
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.h-primary {
+    font-family: Agbalumo;
+    text-align: center;
+    font-size: 3.8rem;
+    padding: 12px;
+
+}
+
+.h-secondary {
+    font-family: Agbalumo;
+    font-size: 2.3rem;
+    padding: 12px;
+}
+
+.btn {
+    font-family: Agbalumo;
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    border-radius: 12px;
+    font-size: 1.3rem;
+    cursor: pointer;
+
+
+}
+
+.btn a {
+    text-decoration: none;
+    color: white;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.center {
+    text-align: center;
+}

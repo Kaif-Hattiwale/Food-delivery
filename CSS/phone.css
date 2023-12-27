@@ -1,0 +1,102 @@
+/* Navigation section */
+#navbar {
+    flex-direction: column;
+}
+
+#navbar ul li a {
+    font-size: 1rem;
+    padding: 0px 3px;
+    padding-bottom: 8px;
+}
+
+.btn {
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+
+/* Home Section */
+#home {
+    height: 370px;
+    padding: 3px 28px;
+}
+
+#home::before {
+    height: 506px;
+}
+
+#home h1 {
+    font-size: 1.8rem;
+}
+
+#home p {
+    font-size: 0.9rem;
+}
+
+.h-primary {
+    font-size: 2rem;
+}
+
+.h-secondary {
+
+    font-size: 2rem;
+}
+
+/* Servives Section */
+#services {
+    flex-direction: column;
+    margin: 5px 17% 10px 15%;
+}
+
+.services-container {
+    width: 100%;
+    height: 1400px;
+}
+
+.services-container::before {
+    content: "";
+    position: absolute;
+    background: url(../servicesbg.jpg) no-repeat center center/cover;
+    width: 100%;
+    height: 1400PX;
+    z-index: -1;
+    opacity: 0.75;
+}
+
+#services .box {
+    margin: 2px 0px;
+    padding: 6px 6px;
+    border-radius: 48px;
+    height: 26rem;
+}
+
+#services .box img {
+    height: 149px;
+    width: 130px;
+
+}
+
+.services-txt {
+    font-size: 11px;
+}
+
+/* Client section */
+#client-section {
+    position: relative;
+    height: auto;
+}
+
+#clients {
+    flex-wrap: wrap;
+}
+
+#clients img {
+    height: auto;
+    width: 60px;
+    padding: 0px 6px;
+}
+
+/* contact Us section */
+#contact-box form {
+    width: 80%;
+}
